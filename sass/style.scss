@@ -1,0 +1,127 @@
+$width: 1920px;
+
+@import "fonts";
+
+.page-wrp {
+    width: $width;
+}
+
+.main-header {
+    width: 100%;
+    min-height: 1024px;
+    background-color: #ccc;
+
+    &-nav-wrp {
+        width: 100%;
+        min-height: 56px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &-logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 180px;
+        text-decoration: none;
+        color: #fff;
+
+        &:hover &-icon {
+            fill: #c7b299;
+        }
+
+        &:hover &-txt {
+            color: #c7b299;
+        }
+
+        &:active &-icon {
+            fill: #fff;
+        }
+
+        &:active &-txt {
+            color: #fff;
+        }
+
+        &-icon {
+            fill: #fff;
+        }
+
+        &-txt {
+            font-family: Raleway;
+            font-size: 34px;
+            line-height: 1.2;
+            font-weight: 400;
+            letter-spacing: -0.04em;
+            color: #fff;
+        }
+    }
+
+    &-navigation {
+        width: 637px;
+
+        &-menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &-list {
+                list-style-type: none;
+            }
+
+            &-link {
+                text-decoration: none;
+                font-family: Montserrat;
+                font-size: 14px;
+                line-height: 1.2;
+                font-weight: 300;
+                color: #fff;
+
+                &:hover {
+                    color: #c7b299;
+                }
+
+                &:active {
+                    color: #fff;
+                }
+            }
+
+        }
+
+    }
+
+    &-cart {
+        width: 18px;
+        height: 24px;
+
+        &-icon {
+            fill: #fff;
+
+            &:hover {
+                fill: #c7b299;
+            }
+
+            &:active {
+                fill: #fff;
+            }
+        }
+    }
+
+    &-form {
+        &-icon {
+            fill: #fff;
+            &:hover {
+                fill: #c7b299;
+            }
+
+            &:active {
+                fill: #fff;
+            }
+        }
+        input[type="search"] {
+            width: 40px;
+            height: 40px;
+            outline: none;
+        }
+    }
+}
